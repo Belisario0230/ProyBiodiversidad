@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Normalize CSS -->
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="/styles/styles.css">
+  <!-- JAM icons -->
+  <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
+  <title>Inicio | EDsoft</title>
+</head>
+
+<body>
+
+  <div id = "fb-root" class="contact-item"></div> 
+  <script async defer crossorigin = "anonymous" src = "https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v19.0" nonce = "fDnm9XLc"></script> 
+
+  <!-- Cabecera (Logo y menú de navegación) -->
+  <header class="main-header">
+    <div class="content-wrapper">
+      <a href="/">
+        <img id="Logo" src="/images/Biodiversidad (100).png" alt="Logo Biodiversidad Bootcam UniSergio Arboleda">
+      </a>
+      <span id="open-menu-button" class="jam jam-menu"></span>
+      <nav id="main-menu" class="main-menu">
+        <span id="close-menu-button" class="jam jam-close"></span>
+        <ul>
+          <li>
+            <a href="/">Inicio</a>
+          </li>
+          <li>
+            <a href="/quienes-somos.html">¿Quiénes somos?</a>
+          </li>
+          <li>
+            <a href="/Cundinamarca.html">Cundinamarca</a>
+          </li>
+          <li>
+            <a href="/Boyaca.html">Boyaca</a>
+          </li>
+          <li>
+            <a href="/contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="contact-section section-container">
+      <h1>Contacto</h1>
+      <div class="content-wrapper">
+        <div>
+          <h3>¿Tienes algo que decir?</h3>
+          <div class="fb-page" 
+            data-tabs="messages"
+            data-href="https://www.facebook.com/profile.php?id=61559310947207"
+            data-width="380">
+          </div>
+        </div>
+
+        <address>
+          <div class="contact-item">
+            <h4>Teléfono</h4>
+            <p>
+              <span class="jam jam-phone"></span>
+              <a href="tel:1234567890">(057) - 456 - 7890</a>
+            </p>
+          </div>
+
+          <div class="contact-item">
+            <h4>Correo electrónico</h4>
+            <p>
+              <span class="jam jam-newsletter"></span>
+              <a href="mailto:contacto@biodiversidad.com">contacto@biodiversidad.com</a>
+            </p>
+          </div>
+
+          <div class="contact-item">
+            <h4>Redes sociales</h4>
+            <div class="social-networks">
+              <a href="#"><span class="jam jam-twitter"></span></a>
+              <a href="https://www.facebook.com/profile.php?id=61559310947207"><span class="jam jam-facebook"></span></a>
+              <a href="#"><span class="jam jam-whatsapp"></span></a>
+              <a href="#"><span class="jam jam-instagram"></span></a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <h4>Dirección</h4>
+            <p>
+              <span class="jam jam-map-marker"></span>
+              <a href="https://www.google.com/maps/place/Cundinamarca,+Colombia/@4.7839672,-75.2933117,8z/data=!3m1!4b1!4m6!3m5!1s0x8e3f28eb1616af2b:0x933cbcb5fad108ed!8m2!3d5.026003!4d-74.0300122!16zL20vMDE5eHB3?hl=es&entry=ttu"
+                target="_blank">Cundinamarca, Colombia</a>
+            </p>
+          </div>
+
+          <iframe
+            src=""
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </address>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <p>Todos los derechos reservados © 2024</p>
+  </footer>
+
+  <script src="/scripts/menu.js"></script>
+</body>
+
+</html>

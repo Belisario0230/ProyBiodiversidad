@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Normalize CSS -->
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="/styles/styles.css">
+  <!-- JAM icons -->
+  <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
+  <title>Inicio | EDsoft</title>
+</head>
+<body>
+
+  <!-- Cabecera (Logo y menú de navegación) -->
+  <header class="main-header">
+    <div class="content-wrapper">
+      <a href="/">
+        <img id="Logo" src="/images/Biodiversidad (100).png"   alt="Logo Biodiversidad Bootcam UniSergio Arboleda">
+      </a>
+      <span id="open-menu-button" class="jam jam-menu"></span>
+      <nav id="main-menu" class="main-menu">
+        <span id="close-menu-button" class="jam jam-close"></span>
+        <ul>
+          <li>
+            <a href="/">Inicio</a>
+        </li>
+        <li>
+          <a href="/quienes-somos.html">¿Quiénes somos?</a>
+        </li>
+        <li>
+          <a href="/Cundinamarca.html">Cundinamarca</a>
+        </li>
+        <li>
+          <a href="/Boyaca.html">Boyaca</a>
+        </li>
+        <li>
+          <a href="/contacto.html">Contacto</a>
+        </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Banner principal -->
+    <section class="main-banner section-container">
+      <div class="content-wrapper content">
+        <div class="container">
+          <h1 class="title">Biodiversidad</h1>
+          <p class="subtitle" style="text-align: justify;">
+            Explora la biodiversidad única de Cundinamarca y Boyacá, dos joyas naturales de Colombia. Desde las imponentes montañas hasta los fértiles valles, estas regiones albergan una variedad asombrosa de flora y fauna, incluyendo especies endémicas y plantas medicinales. Descubre la magia de estos paisajes y la importancia de conservarlos para las futuras generaciones.</p>
+          <div>
+            <a class="button white" href="/contacto.html">Escríbenos ya mismo!</a>
+          </div>
+        </div>
+        <div class="container">
+          <img class="image" src="/images/flora1.jpg" alt="aves boyaca">
+        </div>
+      </div>
+    </section>
+
+    <!-- Nuestros servicios -->
+    <section class="services-section section-container">
+      <h2>Nuestra Biodiversidad</h2>
+      <div class="content-wrapper">
+        <article class="service-item">
+          <span class="jam jam-tree"></span>
+          <h3>Flora</h3>
+          <p style="text-align: justify;"> 
+            Explora la diversa flora de Boyacá y Cundinamarca. Desde las majestuosas orquídeas hasta los imponentes frailejones de los páramos, cada rincón revela una biodiversidad única. Admira la belleza de las flores en campos y montañas, y explora bosques de niebla llenos de musgos y helechos. Descubre la importancia de conservar este tesoro natural para las futuras generaciones.</p>
+        </article>
+        <article class="service-item">
+          <span class="jam jam-fish"></span>
+          <h3>Fauna</h3>
+          <p style="text-align: justify;"  >Descubre la fascinante fauna de Boyacá y Cundinamarca. Desde el majestuoso cóndor andino hasta las coloridas ranas venenosas, cada encuentro ofrece una experiencia única. Observa venados de cola blanca y aves emblemáticas de los Andes en su hábitat natural. Cada criatura es un tesoro que destaca la importancia de conservar estos ecosistemas para el disfrute de las generaciones futuras. </p>
+        </article>
+        <article class="service-item">
+          <span class="jam jam-sun"></span>
+          <h3>Turismo</h3>
+          <p style="text-align: justify;"  >Explora la riqueza turística de Boyacá y Cundinamarca. Recorre pueblos coloniales como Villa de Leyva y Zipaquirá, y sumérgete en parques nacionales como Sumapaz y Chingaza. Disfruta de la gastronomía local y participa en festivales folclóricos. Únete a nosotros y descubre la historia, cultura y belleza natural de estos destinos, asegurando experiencias inolvidables en cada visita.</p>
+        </article>
+      </div>
+    </section>
+
+     <!-- Mapa Nuestra Biodiversidad -->
+     <section class="services-section section-container">
+      <h2>Mapa Biodiversidad</h2>
+      <div id="map" class="content-wrapper">
+        <script src="scriptsmapa.js"></script>
+        <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIhvQgleobxVcafMIGRFwBOn0MvYTmWQo&callback=initMap">
+      </script>
+      </div>
+    </section>
+
+    <!-- Sobre nosotros -->
+    <section class="section-container about-section">
+      <div class="content-wrapper">
+        <h2 class="title">Sobre nosotros</h2>
+        <p>Biodiversidad Cundinamarca y Boyaca</p>
+        <a href="/Cundinamarca.html" class="button white ghost">Ver experiencia</a>
+      </div>
+      <img class="background" src="/images/anf1.jpg" alt="Alumnos estudiando">
+    </section>
+
+    <!-- Ultimos proyectos -->
+    <section class="section-container last-projects">
+      <h2>Nuestra Biodiversidad</h2>
+      <div class="content-wrapper">
+        <a href="#" class="project-item">
+          <article>
+            <div>
+              <h4>Flor Amarilla</h4>
+              <p>Maxillaria guareimensis</p>
+            </div>
+            <div class="image-container">
+              <img src="/images/flor31.jpeg" alt="Pajaro">
+            </div>
+          </article>
+        </a>
+        <a href="#" class="project-item">
+          <article>
+            <div>
+              <h4>Colibri Azulejo</h4>
+              <p>Collibries</p>
+            </div>
+            <div class="image-container">
+              <img src="/images/ave1.jpeg" alt="Ranas">
+            </div>
+          </article>
+        </a>
+        <a href="#" class="project-item">
+          <article>
+            <div>
+              <h4>Jueteadora</h4>
+              <p>Serpenticies</p>
+            </div>
+            <div class="image-container">
+              <img src="/images/serp3.jpg" alt="Pajaro azul">
+            </div>
+          </article>
+        </a>
+        <a href="#" class="project-item">
+          <article>
+            <div>
+              <h4>Rabo amarillo</h4>
+              <p>Serpenticies</p>
+            </div>
+            <div class="image-container">
+              <img src="/images/imagen8.jpeg" alt="Serpiente">
+            </div>
+          </article>
+        </a>
+      </div>
+    </section>
+
+    <!--  Trabajar con nosotros  -->
+    <section class="work-with-us">
+      <div class="content-wrapper">
+        <h2 class="title">¿Quieres conocer mas sobre nosotros?</h2>
+        <p class="subtitle">Explora nuestra página para descubrir cómo nos dedicamos a la conservación de la biodiversidad en Boyacá y Cundinamarca. Conoce nuestra misión, visión y las iniciativas que promovemos para proteger estos tesoros naturales y compartir su belleza con el mundo. ¡Únete a nuestra comunidad y sé parte de este apasionante viaje hacia un futuro más sostenible!<br/> o enviando un correo a:</p>
+        <a href="mailto:contacto@edsoft.com" class="button">contacto@biodiversidad.com</a>
+        <div class="social-networks">
+          <a href="https://www.facebook.com/profile.php?id=61559310947207" target="_blank"><span class="jam jam-facebook"></span></a>
+          <a href="#" target="_blank"><span class="jam jam-twitter"></span></a>
+          <a href="#" target="_blank"><span class="jam jam-whatsapp"></span></a>
+          <a href="#" target="_blank"><span class="jam jam-instagram"></span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <p>Todos los derechos reservados © 2024</p>
+  </footer>
+
+  <script src="/scripts/menu.js"></script>
+</body>
+</html>
