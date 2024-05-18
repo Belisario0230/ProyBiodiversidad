@@ -6,7 +6,8 @@
 /*  Importación de fuentes desde un archivo del mismo proyecto  */
 @font-face {
   font-family : 'Proxima Nova Rg';
-  src         : url('/files/proxima-nova-bold.otf');
+ 
+  src: url(../files/proxima-nova-bold.otf);
 }
 
 :root {
@@ -841,14 +842,6 @@ h4 {
   .contact-section .content-wrapper {
     grid-template-columns: 1fr 1fr; /* Vuelve a dos columnas en pantallas más grandes */
   }
-}
-
-/* Estilo del submenú */
-.submenu {
-  display: none;
-  position: absolute;
-  background-color: #fff; /* Color de fondo del submenú */
-  padding: 10px;
 }
 
 /* Estilo del Mapa */

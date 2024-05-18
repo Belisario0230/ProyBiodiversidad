@@ -11,36 +11,26 @@ const activeMenu = () => {
     })
   }
 }
-
 activeMenu()
-
-// Obtener el enlace y el submenú de Cundinamarca
-const cundinamarcaLink = document.getElementById("cundinamarca-link");
-const cundinamarcaSubmenu = document.getElementById("cundinamarca-submenu");
-
-// Agregar un event listener al enlace de Cundinamarca para mostrar/ocultar el submenú
-cundinamarcaLink.addEventListener("click", function(event) {
-  event.preventDefault(); // Evitar el comportamiento predeterminado del enlace
-  if (cundinamarcaSubmenu.style.display === "block") {
-    cundinamarcaSubmenu.style.display = "none";
-  } else {
-    cundinamarcaSubmenu.style.display = "block";
-  }
-});
 
   // Creacion de mapa interactivo
 function initMap() {
-  // Coordenadas centrales de Cundinamarca
+   // Coordenadas centrales de Cundinamarca
   var cundinamarcaCenter = {lat: 4.6500, lng: -74.0833};
 
   // Coordenadas centrales de Boyacá
-  var boyacaCenter = {lat: 5.7500, lng: -73.5000};
+ var boyacaCenter = {lat: 5.7500, lng: -73.5000};
 
   // Crear el mapa
   var map = new google.maps.Map(document.getElementById('map'), {
       zoom: 8,
-      center: cundinamarcaCenter
-  });
+     center: cundinamarcaCenter
+ });
+
+
+
+
+
 
   // Marcadores de Cundinamarca
   var cundinamarcaMarkers = [
@@ -94,15 +84,15 @@ function initMap() {
       },
   ];
 
-  // Agregar marcadores de Cundinamarca al mapa
-  cundinamarcaMarkers.forEach(function(marker) {
-      var infoWindowContent = '<div style="text-align: center;">' +
-          '<h2>' + marker.title + '</h2>' +
-          '<div style="display: flex; justify-content: center;">' +
-              '<img src="' + marker.image + '" alt="' + marker.title + '"  style="width:150px;height:90px;">' +
-          '</div>' +
-          '<p>' + marker.description + '</p>' +
-          '</div>';
+// Agregar marcadores de Cundinamarca al mapa
+cundinamarcaMarkers.forEach(function(marker) {
+    var infoWindowContent = '<div style="text-align: center; padding: 5px;">' + // Ajusta aquí el padding según sea necesario
+        '<h2>' + marker.title + '</h2>' +
+        '<div style="display: flex; justify-content: center;">' +
+            '<img src="' + marker.image + '" alt="' + marker.title + '" style="width:150px;height:90px;">' +
+        '</div>' +
+        '<h3>' + marker.description + '</h3>' +
+        '</div>';
 
       var newMarker = new google.maps.Marker({
           position: marker.position,
@@ -167,12 +157,12 @@ function initMap() {
 
   // Agregar marcadores de Boyacá al mapa
   boyacaMarkers.forEach(function(marker) {
-      var infoWindowContent = '<div style="text-align: center;">' +
+      var infoWindowContent = '<div style="text-align: center; padding-top: -3px;">' +
           '<h2>' + marker.title + '</h2>' +
           '<div style="display: flex; justify-content: center;">' +
-              '<img src="' + marker.image + '" alt="' + marker.title + '" style="width:150px;height:90px;">' +
+              '<img src="' + marker.image + '" alt="' + marker.title + '" style="width:150px;height:90px; padding-top: -3px;">' +
           '</div>' +
-          '<p>' + marker.description + '</p>' +
+           '<h3>' + marker.description + '</h3>' +
           '</div>';
 
       var newMarker = new google.maps.Marker({
